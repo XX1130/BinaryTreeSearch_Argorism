@@ -1,6 +1,6 @@
 //binaryTreeSearch
 
-BinaryClass root = new BinaryClass(6,0);
+BinaryClass root = new BinaryClass(6);
 
 void setup()
 {
@@ -12,5 +12,5 @@ void setup()
   root.insert(8);
   root.insert(7);
   
-  println(root.search(6));
+  println(root.search(3));
 }

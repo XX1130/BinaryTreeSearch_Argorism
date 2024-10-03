@@ -1,4 +1,6 @@
 //BinaryClass
+//improved: depth
+//          line brake
 
 class BinaryClass{
   int own;
@@ -6,6 +8,16 @@ class BinaryClass{
   BinaryClass rightB;
   int depth;
   
+  //for rootNode
+  BinaryClass(int o)
+  {
+    own = o;
+    leftB = null;
+    rightB = null;
+    this.depth = 0;
+  }
+  
+  //for childNode
   BinaryClass(int o,int d)
   {
     own = o;
@@ -44,7 +56,7 @@ class BinaryClass{
   {
     if(own == target)
     {
-      return "found: "+this.own+" depth: "+this.depth;
+      return "found: " + this.own + System.lineSeparator() + "depth: " + this.depth;
     }
     else if(own <target)
     {
@@ -69,5 +81,4 @@ class BinaryClass{
       }
     }
   }
-  
 }
